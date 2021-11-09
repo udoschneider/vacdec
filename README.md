@@ -1,7 +1,7 @@
 # vacdec
 
 A simple elixir library to parse the EU Covid-19 vaccine certificate, as [specified by the EU](https://ec.europa.eu/health/ehealth/covid-19_en).
-Based on (https://github.com/hannob/vacdec).
+Based on https://github.com/hannob/vacdec .
 
 **It will not validate the signature.**
 
@@ -23,6 +23,16 @@ by adding `vacdec` to your list of dependencies in `mix.exs`:
 def deps do
   [
     {:vacdec, "~> 0.1.0"}
+  ]
+end
+```
+
+Unless published in hex you can directly reference the git repo:
+
+```elixir
+def deps do
+  [
+    {:vacdec, git: "https://github.com/udoschneider/vacdec.git"}
   ]
 end
 ```
